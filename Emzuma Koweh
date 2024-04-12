@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Employee Performance Evaluation Form</title>
+</head>
+<body>
+<nav class="container-fluid">
+    <ul>
+        <li><strong>Employee Performance Evaluation</strong></li>
+    </ul>
+    <ul>
+        <li><a href="#employeeInfo">Employee Info</a></li>
+        <li><a href="#performanceObjectives">Objectives</a></li>
+        <li><a href="#reviewConfirmation" role="button">Review</a></li>
+    </ul>
+</nav>
+<main class="container">
+    <div class="grid">
+        <section>
+            <hgroup>
+                <h2>Employee Information</h2>
+                <h3>Please enter the employee details:</h3>
+            </hgroup>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required><br>
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+                <label for="supervisor">Supervisor:</label>
+                <input type="text" id="supervisor" name="supervisor" required>
+            </p>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Company Logo" />
+                <figcaption><a href="https://www.companywebsite.com" target="_blank">Company Website</a></figcaption>
+            </figure>
+            <h3>Rating Scale:</h3>
+            <p>1 = Poor | 2 = Fair | 3 = Satisfactory | 4 = Good | 5 = Excellent</p>
+            <h3>Competency Ratings:</h3>
+            <table>
+                <tr>
+                    <th>Competency</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>Comments</th>
+                </tr>
+                <tr>
+                    <td>Knowledge of Ajera & Related Software</td>
+                    <td><input type="radio" name="knowledge" value="1"></td>
+                    <td><input type="radio" name="knowledge" value="2"></td>
+                    <td><input type="radio" name="knowledge" value="3"></td>
+                    <td><input type="radio" name="knowledge" value="4"></td>
+                    <td><input type="radio" name="knowledge" value="5"></td>
+                    <td><input type="text" name="knowledgeComments"></td>
+                </tr>
+                <tr>
+                    <td>Communication & Listening Skills</td>
+                    <td><input type="radio" name="communication" value="1"></td>
+                    <td><input type="radio" name="communication" value="2"></td>
+                    <td><input type="radio" name="communication" value="3"></td>
+                    <td><input type="radio" name="communication" value="4"></td>
+                    <td><input type="radio" name="communication" value="5"></td>
+                    <td><input type="text" name="communicationComments"></td>
+                </tr>
+                <tr>
+                    <td>Time Management</td>
+                    <td><input type="radio" name="timeManagement" value="1"></td>
+                    <td><input type="radio" name="timeManagement" value="2"></td>
+                    <td><input type="radio" name="timeManagement" value="3"></td>
+                    <td><input type="radio" name="timeManagement" value="4"></td>
+                    <td><input type="radio" name="timeManagement" value="5"></td>
+                    <td><input type="text" name="timeManagementComments"></td>
+                </tr>
+                <tr>
+                    <td>Dependability & Attendance</td>
+                    <td><input type="radio" name="dependability" value="1"></td>
+                    <td><input type="radio" name="dependability" value="2"></td>
+                    <td><input type="radio" name="dependability" value="3"></td>
+                    <td><input type="radio" name="dependability" value="4"></td>
+                    <td><input type="radio" name="dependability" value="5"></td>
+                    <td><input type="text" name="dependabilityComments"></td>
+                </tr>
+                <tr>
+                    <td>Team Synergy & Attitude</td>
+                    <td><input type="radio" name="teamSynergy" value="1"></td>
+                    <td><input type="radio" name="teamSynergy" value="2"></td>
+                    <td><input type="radio" name="teamSynergy" value="3"></td>
+                    <td><input type="radio" name="teamSynergy" value="4"></td>
+                    <td><input type="radio" name="teamSynergy" value="5"></td>
+                    <td><input type="text" name="teamSynergyComments"></td>
+                </tr>
+                <!-- Custom Competencies Placeholder -->
+            </table>
+        </section>
+        <section aria-label="Performance Objectives for the Upcoming Year">
+            <div class="container">
+                <article>
+                    <hgroup>
+                        <h2>Performance Objectives for the Upcoming Year</h2>
+                        <h3>Define specific, measurable, achievable, relevant, and time-bound objectives.</h3>
+                    </hgroup>
+                    <form class="grid">
+                        <label for="objective1">Objective:</label>
+                        <input type="text" id="objective1" name="objective1" placeholder="First Objective" required><br>
+                        <label for="action1">Action Steps:</label>
+                        <input type="text" id="action1" name="action1" required><br>
+                        <label for="resources1">Resources Required:</label>
+                        <input type="text" id="resources1" name="resources1" required><br>
+                        <label for="completion1">Expected Completion Date:</label>
+                        <input type="date" id="completion1" name="completion1" required>
+                        <!-- Additional Objectives Placeholder -->
+                    </form>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="container">
+    <small><a href="#">Privacy Policy</a> • <a href="#">Help</a></small>
+</footer>
+</body>
+</html>
